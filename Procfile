@@ -1,0 +1,1 @@
+web: gunicorn fbi_api.wsgi
