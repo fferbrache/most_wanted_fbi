@@ -10,7 +10,7 @@ class LocationSerializer(object):
 
         for location in self.body:
             location_details = {
-                'name': location.name,
+                'location_name': location.location_name,
                 'address': location.address,
                 'phone': location.phone,
                 'description': location.description
@@ -22,7 +22,7 @@ class LocationSerializer(object):
     @property
     def location_detail(self):
         return {
-            'name': self.body.name,
+            'location_name': self.body.location_name,
             'address': self.body.address,
             'phone': self.body.phone,
             'description': self.body.description
