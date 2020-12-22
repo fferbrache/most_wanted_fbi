@@ -8,7 +8,7 @@ class Location(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return f"id: {self.id}, name={self.name}, address={self.address}, phone={self.phone}, description={self.description}"
+        return self.name
 
 # class Fugitive(models.Model):
 #     location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='fugitives')
